@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+  <div class="container">
+    <input id="screen" placeholder="" disabled></input>
+    <div class="extra-dets">
+        <div id="solar-panel"></div>
+        <button id="on-off" class="btn" onclick="onOff()">0n</button>
+    </div>
+
+    <div class="btn-container">
+        <button class="btn btn-fi-row" onclick="expression('\u221A')">√</button>
+        <button class="btn btn-fi-row" onclick="expression('\u00B2')">X²</button>
+        <button class="btn btn-fi-row">%</button>
+        <button class="btn btn-fi-row" onclick="clearAll()">CL</button>
+        <button class="btn btn-fi-row" onclick="delOne()">DEL</button>
+
+        <button class="btn btn-se-row num" onclick="expression(7)">7</button>
+        <button class="btn btn-se-row num" onclick="expression(8)">8</button>
+        <button class="btn btn-se-row num" onclick="expression(9)">9</button>
+        <button class="btn btn-se-row" onclick="expression('/')">÷</button>
+        <button class="btn btn-se-row" onclick="expression('(')">(</button>
+
+        <button class="btn btn-th-row num" onclick="expression(4)">4</button>
+        <button class="btn btn-th-row num" onclick="expression(5)">5</button>
+        <button class="btn btn-th-row num" onclick="expression(6)">6</button>
+        <button class="btn btn-th-row" onclick="expression('*')">×</button>
+        <button class="btn btn-th-row" onclick="expression(')')">)</button>
+
+        <button class="btn btn-fo-row num" onclick="expression(1)">1</button>
+        <button class="btn btn-fo-row num" onclick="expression(2)">2</button>
+        <button class="btn btn-fo-row num" onclick="expression(3)">3</button>
+        <button class="btn btn-fo-row" onclick="expression('-')">-</button>
+        <button class="btn special-btn" onclick="result()">=</button>
+
+        <button class="btn btn-la-row num" onclick="expression(0)">0</button>
+        <button class="btn btn-la-row num" onclick="expression('.')">.</button>
+        <button class="btn btn-la-row num" onclick="expression('00')">00</button>
+        <button class="btn btn-la-row" onclick="expression('+')">+</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
